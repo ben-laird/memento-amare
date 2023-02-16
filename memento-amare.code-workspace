@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "name": "Main",
+      "path": "."
+    },
+    {
+      "name": "Code",
+      "path": "src"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/src": true
+    }
+  }
+}
