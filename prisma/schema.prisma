@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("SECRET_DATABASE_URL")
+  shadowDatabaseUrl = env("SECRET_SHADOW_DATABASE_URL")
+}
+
+model countries {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(255)
+}
+
+model message {
+  id         BigInt    @id @default(autoincrement())
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  content    String
+}
+
+model memes {
+  id   BigInt @id @default(autoincrement())
+  meme String
+}
