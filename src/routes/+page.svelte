@@ -1,3 +1,11 @@
+<script lang="ts">
+  import type { PageData } from "./$types";
+
+  export let data: PageData;
+  let { countries } = data;
+  $: ({ countries } = data);
+</script>
+
 <h1
   class="prose m-4 rounded-md bg-pink-400 p-4 text-center text-white lg:rounded-3xl lg:text-6xl"
 >
@@ -19,3 +27,9 @@
 <p class="prose m-3 mx-auto w-full p-3 text-center text-sm lg:text-2xl">
   Click <a href="/roadmap">here</a> to see what else I have planned for this project...
 </p>
+
+{#each countries as country}
+  <p class="prose m-3 mx-auto w-full p-3 text-center text-sm lg:text-2xl">
+    {country.name}
+  </p>
+{/each}
