@@ -1,7 +1,7 @@
 <h1
   class="prose m-4 rounded-md bg-pink-400 p-4 text-center text-white lg:rounded-3xl lg:text-6xl"
 >
-  Welcome to Memento Amare
+  Welcome to Memento Amoris
 </h1>
 <p class="prose m-3 mx-auto w-full p-3 text-center text-sm lg:text-2xl">
   Hi Allie. I hope you're having a great day today. I wanted to make this app
